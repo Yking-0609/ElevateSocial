@@ -266,11 +266,24 @@ footer {
         padding: 0;
     }
 
-    /* HERO SECTION */
+@media (max-width: 768px) {
     .hero {
-        padding: 4rem 1.2rem;
+        padding-top: 140px;   /* space for fixed header */
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        padding-bottom: 4rem;
         text-align: center;
     }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding-top: 120px;
+        height: auto;
+        padding-bottom: 3rem;
+    }
+}
+
 
     .hero ul {
         max-width: 100%;
