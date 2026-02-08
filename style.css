@@ -437,23 +437,48 @@ header {
     font-size: 1.6rem;
 }
 
-/* Hamburger right */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+header {
+    background: rgba(0, 90, 210, 0.95);
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.hamburger span {
-    height: 3px;
-    width: 26px;
-    background: #000;
-    margin: 4px 0;
-    border-radius: 4px;
+nav,
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
-/* Push body content below fixed header */
-body {
-    padding-top: 80px; /* adjust if header height changes */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
 }
+
+
+/* ===== MOBILE HEADER FIX ===== */
+@media (max-width: 768px) {
+
+    header {
+        background: rgba(0, 90, 210, 0.95);
+    }
+
+    .nav-links {
+        background: rgba(0, 90, 210, 0.98);
+    }
+
+    .nav-links li a {
+        color: #ffffff;
+    }
+
+    .hamburger span {
+        background: #ffffff;
+    }
+}
+
 
