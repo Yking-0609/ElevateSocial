@@ -18,13 +18,15 @@ body {
    HEADER & NAV
 ===================== */
 header {
-    background: rgba(0, 90, 210, 0.95);
+    background: #005ad2;
     padding: 1rem 5%;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
+
 
 nav {
     display: flex;
@@ -270,12 +272,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .hero,
     .page-hero {
-        padding-top: 120px;
-        height: auto;
-        padding-bottom: 3rem;
+        margin-top: 80px;
     }
 }
+
 
 
     .hero ul {
@@ -534,3 +536,20 @@ nav a {
     }
 }
 
+/* ===== FIX MOBILE BACKGROUND OVERLAP BUG ===== */
+@media (max-width: 768px) {
+
+    body.home,
+    body.about,
+    body.packages,
+    body.blog,
+    body.contact {
+        background-attachment: scroll !important;
+    }
+
+}
+
+header {
+    background-color: #005ad2;
+    isolation: isolate;
+}
