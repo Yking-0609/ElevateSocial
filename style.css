@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* =====================
+   GLOBAL STYLES
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+/* =====================
+   HEADER & NAV
+===================== */
+header {
+    background: rgba(0, 90, 210, 0.95);
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* =====================
+   SHARED COMPONENTS
+===================== */
+.hero,
+.page-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+}
+
+.page-hero {
+    height: 45vh;
+}
+
+.content-box {
+    max-width: 1100px;
+    margin: -80px auto 80px;
+    background: white;
+    padding: 3rem;
+    border-radius: 22px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.btn {
+    background: white;
+    color: #004cff;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* =====================
+   HOME PAGE
+===================== */
+body.home {
+    background:
+        linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+        url('https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=2000&q=80')
+        center / cover no-repeat fixed;
+}
+
+body.home .hero {
+    background:
+        linear-gradient(rgba(0,40,120,0.75), rgba(0,40,120,0.6)),
+        url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=2000&q=80')
+        center / cover no-repeat;
+}
+
+body.home .hero h1 {
+    font-size: 4rem;
+}
+
+body.home .hero p {
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
+}
+
+/* =====================
+   ABOUT PAGE
+===================== */
+body.about {
+    background:
+        linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+        url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2000&q=80')
+        center / cover no-repeat fixed;
+}
+
+body.about .page-hero {
+    background:
+        linear-gradient(rgba(0,40,120,0.7), rgba(0,40,120,0.7)),
+        url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80')
+        center / cover no-repeat;
+}
+
+/* =====================
+   PACKAGES PAGE
+===================== */
+body.packages {
+    background:
+        linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+        url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=2000&q=80')
+        center / cover no-repeat fixed;
+}
+
+body.packages .page-hero {
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url('https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=2000&q=80')
+        center / cover no-repeat;
+}
+
+/* =====================
+   BLOG PAGE
+===================== */
+body.blog {
+    background:
+        linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+        url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80')
+        center / cover no-repeat fixed;
+}
+
+body.blog .page-hero {
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')
+        center / cover no-repeat;
+}
+
+/* =====================
+   CONTACT PAGE
+===================== */
+body.contact {
+    background:
+        linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+        url('https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=2000&q=80')
+        center / cover no-repeat fixed;
+}
+
+body.contact .page-hero {
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4')
+        center / cover no-repeat;
+}
+
+/* =====================
+   FORMS
+===================== */
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background: #0b1c3a;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem;
+}

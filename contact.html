@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Elevate Social</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact">
+
+<header>
+    <nav>
+        <h2>Elevate Social</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <h1>Contact Us</h1>
+</section>
+
+<div class="content-box">
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- REQUIRED -->
+        <input type="hidden" name="access_key" value="b55afc92-7fe7-4903-bd48-fbcc97ccc7d5">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <!-- OPTIONAL BUT RECOMMENDED -->
+        <input type="hidden" name="subject" value="New Contact Form Enquiry - Elevate Social">
+        <input type="hidden" name="from_name" value="Elevate Social Website">
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+
+<footer>
+    © 2026 Elevate Social
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    const toEmail = "elevatesocial19@gmail.com"; // 🔁 replace with your email
+    const subject = encodeURIComponent("New Contact Form Enquiry");
+    const body = encodeURIComponent(
+        `Name: ${name}\n` +
+        `Email: ${email}\n\n` +
+        `Message:\n${message}`
+    );
+
+    window.location.href = `mailto:${toEmail}?subject=${subject}&body=${body}`;
+
+    this.reset();
+});
+</script>
+
+<script>
+const form = document.querySelector("form");
+
+form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+        method: "POST",
+        body: formData
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+        alert("Thank you! Your message has been sent successfully.");
+        form.reset();
+    } else {
+        alert("Something went wrong. Please try again later.");
+    }
+});
+</script>
+
+
+
+
+</body>
+</html>
