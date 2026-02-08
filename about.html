@@ -10,16 +10,24 @@
 <body class="about">
 
 <header>
-    <nav>
-        <h2>Elevate Social</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="packages.html">Packages</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <h2>Elevate Social</h2>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
 </header>
 
 <section class="page-hero">
@@ -153,6 +161,13 @@
         Follow us on Instagram: @elevateesocial
     </a>
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
 
 </body>
 </html>
