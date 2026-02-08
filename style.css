@@ -57,9 +57,12 @@ nav a {
     color: white;
 }
 
+
 .hero {
-    height: 100vh;
+    padding-top: 160px; /* space for fixed header */
+    padding-bottom: 6rem;
 }
+
 
 .page-hero {
     height: 45vh;
@@ -380,18 +383,45 @@ footer {
     .nav-links.active {
         display: flex;
     }
+
+     .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .nav-links li {
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
 }
 
 /* ===== FIXED HEADER LAYOUT ===== */
 
 header {
+    background: rgba(0, 90, 210, 0.95);
+    padding: 1rem 5%;
     position: fixed;
-    top: 0;
     width: 100%;
-    background: #fff;
+    top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
+}   
+
+
 
 /* Navbar alignment */
 .navbar {
@@ -427,30 +457,3 @@ body {
     padding-top: 80px; /* adjust if header height changes */
 }
 
-/* Mobile menu */
-@media (max-width: 768px) {
-
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-
-    .nav-links li {
-        padding: 1rem 0;
-        text-align: center;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-}
