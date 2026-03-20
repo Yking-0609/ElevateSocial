@@ -497,3 +497,234 @@ nav a {
         font-size: 1.4rem;
     }
 }
+
+/* =====================
+   WHATSAPP BUTTON
+===================== */
+.whatsapp-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* =====================
+   PACKAGE CARDS UPGRADE
+===================== */
+.card {
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+}
+
+/* =====================
+   DSLR SECTION
+===================== */
+.dslr-title {
+    text-align: center;
+    margin: 3rem 0 2rem;
+    font-size: 2rem;
+    color: #004cff;
+}
+
+.dslr-card {
+    border: 2px solid #e6ecff;
+    background: #f9fbff;
+}
+
+/* =====================
+   INFO BOX (BEST FOR / BONUS)
+===================== */
+.info-box {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f0f6ff;
+    border-left: 4px solid #007bff;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.info-box.premium {
+    background: #eaf4ff;
+    border-left: 4px solid #005eff;
+}
+
+/* =====================
+   ABOUT STUDENT SECTION
+===================== */
+.student-note {
+    background: #f5f9ff;
+    border-left: 5px solid #004cff;
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    font-size: 1.05rem;
+}
+
+/* =====================
+   FLOATING WHATSAPP
+===================== */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    padding: 14px 16px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+/* =====================
+   ABOUT POINTS STYLE
+===================== */
+.about-points {
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto 0;
+    max-width: 750px;
+    text-align: center;
+}
+
+.about-points li {
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    background: #f7faff;
+    border-left: none; /* remove left line */
+    border-top: 4px solid #004cff; /* move line to top */
+    border-radius: 12px;
+    text-align: center;
+}
+
+.about-points strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #004cff;
+    margin-bottom: 6px;
+}
+
+.about-points p {
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 0.98rem;
+    max-width: 600px;
+}
+
+.about-points li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+
+    .whatsapp-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .info-box {
+        padding: 0.9rem;
+        font-size: 0.9rem;
+    }
+
+    .info-box strong {
+        font-size: 0.95rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .dslr-title {
+        font-size: 1.5rem;
+        margin: 2rem 0 1.5rem;
+    }
+
+    .dslr-card {
+        padding: 1.5rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .about-points {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    .about-points li {
+        padding: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .about-points strong {
+        font-size: 1rem;
+    }
+
+    .about-points p {
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .card {
+        padding: 1.4rem;
+    }
+
+    .card ul {
+        padding-left: 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .floating-whatsapp {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px 14px;
+        font-size: 16px;
+    }
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
