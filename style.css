@@ -262,40 +262,35 @@ footer {
         padding: 0;
     }
 
-@media (max-width: 768px) {
+    /* ✅ MOVE THESE HERE */
     .hero {
-        padding-top: 140px;   /* space for fixed header */
+        padding-top: 140px;
         padding-left: 1.2rem;
         padding-right: 1.2rem;
         padding-bottom: 4rem;
         text-align: center;
     }
-}
 
-@media (max-width: 768px) {
     .hero,
     .page-hero {
         margin-top: 80px;
     }
-}
-
-
 
     .hero ul {
         max-width: 100%;
         font-size: 1rem;
     }
 
-.content-box {
-    margin: 40px auto 80px;
-}
+    .content-box {
+        margin: 40px auto 80px;
+    }
 
-
-    /* CARDS (Home / Packages / Blog) */
     .cards {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+}
+
 
     .card {
         padding: 1.5rem;
