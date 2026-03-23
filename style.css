@@ -316,6 +316,7 @@ footer {
     }
 
 
+
 header {
     position: fixed;
     top: 0;
@@ -337,7 +338,11 @@ header {
     align-items: center;
 }
 
-
+.logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+}
 
 nav ul {
     display: flex;
@@ -718,13 +723,36 @@ img {
     height: auto;
 }
 
+/* LOGO PERFECT SIZE */
 .logo img {
-    height: 38px;
+    height: 38px;   /* reduced from 45 → looks premium */
     width: auto;
+    object-fit: contain;
 }
 
+/* ADD SPACING */
+.logo {
+    padding: 5px 0;
+}
+
+/* HEADER ALIGNMENT FIX */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
     .logo img {
         height: 28px !important;
     }
+}
+
+.logo img {
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
 }
