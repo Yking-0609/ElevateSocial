@@ -728,23 +728,36 @@ img {
     height: auto;
 }
 
-/* LOGO SIZE FIX */
+/* LOGO PERFECT SIZE */
 .logo img {
-    height: 45px;   /* perfect desktop size */
+    height: 38px;   /* reduced from 45 → looks premium */
     width: auto;
     object-fit: contain;
 }
 
-/* HEADER ALIGNMENT */
+/* ADD SPACING */
+.logo {
+    padding: 5px 0;
+}
+
+/* HEADER ALIGNMENT FIX */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* MOBILE SIZE */
+/* MOBILE */
 @media (max-width: 768px) {
     .logo img {
-        height: 35px;  /* smaller for mobile */
+        height: 28px !important;
     }
+}
+
+.logo img {
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
 }
