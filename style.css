@@ -728,28 +728,23 @@ img {
     height: auto;
 }
 
-/* LOGO STYLE */
+/* LOGO SIZE FIX */
 .logo img {
-    height: 50px;
+    height: 45px;   /* perfect desktop size */
     width: auto;
-    display: block;
+    object-fit: contain;
 }
 
-/* ALIGN LOGO LEFT */
+/* HEADER ALIGNMENT */
 .navbar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
 }
 
-/* OPTIONAL: spacing */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
+/* MOBILE SIZE */
 @media (max-width: 768px) {
     .logo img {
-        height: 40px;
+        height: 35px;  /* smaller for mobile */
     }
 }
