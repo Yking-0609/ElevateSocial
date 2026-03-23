@@ -725,7 +725,7 @@ img {
 
 /* LOGO PERFECT SIZE */
 .logo img {
-    height: 45px;   /* reduced from 45 → looks premium */
+    height: 50px;   /* reduced from 45 → looks premium */
     width: auto;
     object-fit: contain;
 }
@@ -745,7 +745,7 @@ img {
 /* MOBILE */
 @media (max-width: 768px) {
     .logo img {
-        height: 35px !important;
+        height: 4opx !important;
     }
 }
 
