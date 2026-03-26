@@ -773,3 +773,20 @@ img {
     max-width: 350px;
     width: 100%;
 }
+
+/* CENTER CONTENT INSIDE WEBSITE SIDE CARD */
+.cards .card h3,
+.cards .card ul,
+.cards .card .info-box {
+    text-align: center;
+}
+
+/* Remove left padding from list when centered */
+.cards .card ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.cards .card ul li {
+    margin-bottom: 8px;
+}
