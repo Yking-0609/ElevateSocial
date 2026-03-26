@@ -790,3 +790,16 @@ img {
 .cards .card ul li {
     margin-bottom: 8px;
 }
+
+/* CENTER BULLET LIST PROPERLY */
+.cards .card ul {
+    list-style: none;   /* remove default dots */
+    padding-left: 0;
+    text-align: center;
+}
+
+.cards .card ul li::before {
+    content: "•";
+    display: inline-block;
+    margin-right: 6px;
+}
