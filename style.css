@@ -756,3 +756,9 @@ img {
 .logo img:hover {
     transform: scale(1.05);
 }
+
+/* WEBSITE PACKAGE TITLE */
+.website-title {
+    color: #005ad2;
+    font-weight: 700;
+}
