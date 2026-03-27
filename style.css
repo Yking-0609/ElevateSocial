@@ -803,23 +803,3 @@ img {
     display: inline-block;
     margin-right: 6px;
 }
-
-@media (max-width: 768px) {
-    body.home .hero {
-        background-size: contain;   /* 👈 FIX */
-        background-position: top;   /* better alignment */
-    }
-}
-
-@media (max-width: 768px) {
-    body.home .hero {
-        background-position: center top;  /* shows upper part */
-        background-size: cover;
-    }
-}
-
-@media (max-width: 768px) {
-    body.home .hero {
-        background-position: 50% 20%;  /* adjust manually */
-    }
-}
