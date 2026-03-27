@@ -803,3 +803,19 @@ img {
     display: inline-block;
     margin-right: 6px;
 }
+
+body.home .hero {
+    background: 
+        linear-gradient(rgba(0,40,120,0.75), rgba(0,40,120,0.6)),
+        url('Elevate Banner.png')
+        center / cover no-repeat;
+}
+
+@media (max-width: 768px) {
+    body.home .hero {
+        background: 
+            linear-gradient(rgba(0,40,120,0.75), rgba(0,40,120,0.6)),
+            url('Elevate Phone Banner.png')
+            center / cover no-repeat;
+    }
+}
