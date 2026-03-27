@@ -115,7 +115,7 @@ body.home {
 body.home .hero {
     background:
         linear-gradient(rgba(0,40,120,0.75), rgba(0,40,120,0.6)),
-        url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=2000&q=80')
+        url('Elevate Banner.png')
         center / cover no-repeat;
 }
 
