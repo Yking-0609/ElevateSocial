@@ -803,3 +803,9 @@ img {
     display: inline-block;
     margin-right: 6px;
 }
+
+@media (max-width: 768px) {
+    body.home .hero {
+        background-position: 50% 20%;  /* adjust manually */
+    }
+}
