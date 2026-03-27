@@ -807,7 +807,7 @@ img {
 body.home .hero {
     background: 
         linear-gradient(rgba(0,40,120,0.75), rgba(0,40,120,0.6)),
-        url('Elevate Banner.png')
+        url('Elevate\ Banner.png')
         center / cover no-repeat;
 }
 
@@ -815,7 +815,7 @@ body.home .hero {
     body.home .hero {
         background: 
             linear-gradient(rgba(0,40,120,0.75), rgba(0,40,120,0.6)),
-            url('Elevate Phone Banner.png')
+            url('Elevate\ Phone\ Banner.png')
             center / cover no-repeat;
     }
 }
