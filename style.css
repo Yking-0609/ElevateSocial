@@ -1764,3 +1764,16 @@ body.blog .team-hero p {
     }
 
 }
+
+.client-instagram {
+    display: block;
+    margin-top: 5px;
+    color: #005ad2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.client-instagram:hover {
+    text-decoration: underline;
+}
