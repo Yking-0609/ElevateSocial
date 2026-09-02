@@ -745,7 +745,7 @@ img {
 /* MOBILE */
 @media (max-width: 768px) {
     .logo img {
-        height: 4opx !important;
+        height: 40px !important;
     }
 }
 
@@ -1523,5 +1523,153 @@ body.blog .team-hero h1 {
     body.blog .team-hero h1 {
         font-size: 42px;
         line-height: 1.1;
+    }
+}
+
+/* =====================================================
+   FINAL TEAM HERO FIX
+   Keep this block at the end of the stylesheet.
+   ===================================================== */
+
+/* Desktop + tablet */
+body.blog .team-hero {
+    position: relative;
+    z-index: 1;
+
+    /* Fixed header is 80px high */
+    margin-top: 80px;
+
+    min-height: calc(100vh - 80px);
+    padding: 80px 20px 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body.blog .team-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+
+    transform: none;
+    text-align: center;
+}
+
+body.blog .team-small-title {
+    display: inline-block;
+    text-align: center;
+}
+
+body.blog .team-hero h1 {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto 25px;
+    padding: 0;
+
+    text-align: center;
+
+    font-size: 64px;
+    line-height: 1.1;
+}
+
+body.blog .team-hero p {
+    width: 100%;
+    max-width: 750px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    text-align: center;
+
+    color: #003b7a;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* Make sure the fixed header always stays above the hero */
+body.blog header {
+    z-index: 1000;
+}
+
+/* =====================================================
+   FINAL TEAM HERO - MOBILE
+   ===================================================== */
+
+@media (max-width: 900px) {
+    body.blog .team-hero {
+        margin-top: 80px;
+        min-height: calc(100vh - 80px);
+        padding: 70px 20px 60px;
+    }
+
+    body.blog .team-hero-content {
+        max-width: 750px;
+    }
+
+    body.blog .team-hero h1 {
+        font-size: 48px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    body.blog .team-hero p {
+        max-width: 650px;
+        font-size: 18px;
+        line-height: 1.65;
+    }
+}
+
+@media (max-width: 600px) {
+    body.blog .team-hero {
+        margin-top: 80px;
+        min-height: calc(100vh - 80px);
+        padding: 55px 20px 50px;
+    }
+
+    body.blog .team-hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    body.blog .team-hero h1 {
+        font-size: 42px;
+        line-height: 1.1;
+        margin-bottom: 18px;
+    }
+
+    body.blog .team-hero p {
+        max-width: 100%;
+        font-size: 17px;
+        line-height: 1.6;
+        color: #003b7a;
+    }
+}
+
+@media (max-width: 480px) {
+    body.blog .team-hero {
+        padding: 45px 16px 45px;
+    }
+
+    body.blog .team-hero h1 {
+        font-size: 34px;
+    }
+
+    body.blog .team-hero p {
+        font-size: 16px;
     }
 }
