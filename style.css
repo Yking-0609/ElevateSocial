@@ -1465,3 +1465,63 @@ body.home .hero {
     }
 
 }
+
+/* CENTER TEAM HERO CONTENT */
+
+body.blog .team-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+body.blog .team-hero-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body.blog .team-hero h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.blog .team-hero p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.blog .team-hero p {
+    color: #003b7a;
+}
+
+/* Fix team hero hiding behind fixed navbar */
+body.blog .team-hero {
+    min-height: 500px;
+    padding: 120px 20px 70px;
+    box-sizing: border-box;
+}
+
+body.blog .team-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+body.blog .team-hero h1 {
+    margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    body.blog .team-hero {
+        min-height: 520px;
+        padding: 110px 20px 60px;
+    }
+
+    body.blog .team-hero h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+}
