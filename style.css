@@ -819,3 +819,649 @@ body.home .hero {
             center / cover no-repeat;
     }
 }
+
+/* =====================================================
+   ELEVATE SOCIAL - OUR TEAM PAGE
+   ===================================================== */
+
+
+/* =====================
+   TEAM HERO
+   ===================== */
+
+.team-hero-content {
+    max-width: 850px;
+}
+
+
+.team-small-title {
+    display: inline-block;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    margin-bottom: 1.2rem;
+
+    opacity: 0.9;
+}
+
+
+.team-hero h1 {
+    font-size: 4rem;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+}
+
+
+.team-hero p {
+    max-width: 650px;
+    margin: auto;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.92);
+}
+
+
+/* =====================
+   TEAM INTRO
+   ===================== */
+
+.team-intro {
+    background: #ffffff;
+    padding: 90px 20px 70px;
+    text-align: center;
+}
+
+
+.team-intro-inner {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+.section-label {
+    display: block;
+
+    color: #005ad2;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+    margin-bottom: 12px;
+}
+
+
+.team-intro h2,
+.section-heading h2 {
+    font-size: 2.7rem;
+    color: #101d3b;
+    margin-bottom: 1.2rem;
+}
+
+
+.team-intro p,
+.section-heading p {
+    color: #555;
+    line-height: 1.9;
+    font-size: 1.05rem;
+}
+
+
+/* =====================
+   FOUNDERS SECTION
+   ===================== */
+
+.founders-section {
+    padding: 70px 5% 100px;
+    background: #f6f9ff;
+}
+
+
+.founders-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 70px;
+}
+
+
+.founder-card {
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+    overflow: hidden;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.10);
+
+    transition: 0.35s ease;
+}
+
+
+.founder-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 70px rgba(0,0,0,0.16);
+}
+
+
+.founder-card.reverse-card {
+    grid-template-columns: 55% 45%;
+}
+
+
+.founder-card.reverse-card .founder-image {
+    order: 2;
+}
+
+
+.founder-card.reverse-card .founder-info {
+    order: 1;
+}
+
+
+.founder-image {
+    min-height: 560px;
+    overflow: hidden;
+}
+
+
+.founder-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+
+.founder-card:hover .founder-image img {
+    transform: scale(1.04);
+}
+
+
+.founder-info {
+    padding: 55px 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.founder-number {
+    color: #005ad2;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.founder-info h2 {
+    font-size: 2.7rem;
+    color: #101d3b;
+
+    margin-bottom: 5px;
+}
+
+
+.founder-info h3 {
+    color: #005ad2;
+
+    font-size: 1.05rem;
+    font-weight: 600;
+
+    line-height: 1.5;
+
+    margin-bottom: 1.3rem;
+}
+
+
+.founder-description {
+    color: #555;
+
+    line-height: 1.8;
+    font-size: 0.98rem;
+
+    margin-bottom: 1.4rem;
+}
+
+
+.role-line {
+    width: 60px;
+    height: 4px;
+
+    background: #005ad2;
+
+    border-radius: 10px;
+
+    margin-bottom: 1.3rem;
+}
+
+
+.founder-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.founder-info ul li {
+    position: relative;
+
+    padding-left: 25px;
+    margin-bottom: 11px;
+
+    color: #333;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+.founder-info ul li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    color: #005ad2;
+    font-weight: 700;
+}
+
+
+/* =====================
+   HOW WE WORK
+   ===================== */
+
+.team-work-section {
+    padding: 100px 5%;
+
+    background: #ffffff;
+}
+
+
+.section-heading {
+    max-width: 850px;
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.work-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.work-card {
+    padding: 35px 30px;
+
+    background: #f6f9ff;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    border: 1px solid #e4edff;
+
+    transition: 0.3s ease;
+}
+
+
+.work-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 18px 45px rgba(0,0,0,0.10);
+}
+
+
+.work-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #005ad2;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-weight: 700;
+}
+
+
+.work-card h3 {
+    color: #101d3b;
+    font-size: 1.35rem;
+
+    margin-bottom: 12px;
+}
+
+
+.work-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* =====================
+   CLIENT REVIEWS
+   ===================== */
+
+.reviews-section {
+    padding: 100px 5%;
+
+    background:
+        linear-gradient(
+            rgba(0,90,210,0.95),
+            rgba(0,45,130,0.95)
+        );
+}
+
+
+.reviews-section .section-label {
+    color: #ffffff;
+}
+
+
+.reviews-section .section-heading h2 {
+    color: #ffffff;
+}
+
+
+.reviews-section .section-heading p {
+    color: rgba(255,255,255,0.85);
+}
+
+
+.reviews-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.review-card {
+    position: relative;
+
+    background: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+
+.quote-mark {
+    color: #005ad2;
+
+    font-size: 4rem;
+    font-weight: 700;
+
+    line-height: 0.7;
+
+    margin-bottom: 20px;
+}
+
+
+.review-card p {
+    color: #555;
+
+    line-height: 1.8;
+    font-size: 0.95rem;
+
+    margin-bottom: 25px;
+}
+
+
+.review-client {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid #e5e5e5;
+
+    padding-top: 18px;
+}
+
+
+.review-client strong {
+    color: #101d3b;
+    font-size: 1rem;
+}
+
+
+.review-client span {
+    color: #888;
+
+    font-size: 0.85rem;
+
+    margin-top: 3px;
+}
+
+
+/* =====================
+   TEAM CTA
+   ===================== */
+
+.team-cta {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #ffffff;
+}
+
+
+.team-cta > div {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.team-cta h2 {
+    color: #101d3b;
+
+    font-size: 2.7rem;
+
+    margin-bottom: 15px;
+}
+
+
+.team-cta p {
+    color: #666;
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+.team-cta-button {
+    display: inline-block;
+
+    background: #005ad2;
+    color: #ffffff;
+
+    padding: 14px 32px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.team-cta-button:hover {
+    background: #003f98;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+
+/* =====================================================
+   TEAM PAGE - MOBILE
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .team-hero {
+        min-height: 70vh;
+    }
+
+    .team-hero h1 {
+        font-size: 3rem;
+    }
+
+    .founder-card,
+    .founder-card.reverse-card {
+        grid-template-columns: 1fr;
+    }
+
+    .founder-card.reverse-card .founder-image {
+        order: 1;
+    }
+
+    .founder-card.reverse-card .founder-info {
+        order: 2;
+    }
+
+    .founder-image {
+        min-height: 500px;
+    }
+
+    .founder-info {
+        padding: 40px 30px;
+    }
+
+    .work-grid,
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =====================
+   SMALL MOBILE
+   ===================== */
+
+@media (max-width: 600px) {
+
+    body.blog .team-hero {
+        min-height: 75vh;
+
+        padding: 120px 20px 60px;
+    }
+
+    .team-small-title {
+        font-size: 0.72rem;
+        letter-spacing: 2px;
+    }
+
+    .team-hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .team-hero p {
+        font-size: 0.95rem;
+    }
+
+    .team-intro {
+        padding: 65px 20px 50px;
+    }
+
+    .team-intro h2,
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .founders-section {
+        padding: 45px 15px 70px;
+    }
+
+    .founders-grid {
+        gap: 40px;
+    }
+
+    .founder-image {
+        min-height: 430px;
+    }
+
+    .founder-info {
+        padding: 30px 24px;
+    }
+
+    .founder-info h2 {
+        font-size: 2.2rem;
+    }
+
+    .founder-info h3 {
+        font-size: 0.95rem;
+    }
+
+    .founder-description {
+        font-size: 0.92rem;
+    }
+
+    .team-work-section,
+    .reviews-section {
+        padding: 70px 20px;
+    }
+
+    .work-card {
+        padding: 30px 22px;
+    }
+
+    .review-card {
+        padding: 28px 24px;
+    }
+
+    .team-cta {
+        padding: 70px 20px;
+    }
+
+    .team-cta h2 {
+        font-size: 2rem;
+    }
+
+}
